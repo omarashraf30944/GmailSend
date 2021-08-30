@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MenusActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I AM A POP UP"
+        android:layout_margin="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/_22ssp"
+        android:id="@+id/tv_text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="I AM A TEXT"
+        android:layout_margin="@dimen/_10sdp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="@dimen/_22ssp"
+        android:id="@+id/tv_popUp" />
+
+
+
+
+
+
+
+
+
+</LinearLayout>

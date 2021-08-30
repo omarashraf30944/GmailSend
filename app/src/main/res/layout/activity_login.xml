@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7AFDD835"
+    android:orientation="vertical"
+    android:padding="@dimen/_10sdp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Login Screen"
+        android:textColor="#0D47A1"
+        android:textSize="@dimen/_22ssp"
+        android:textStyle="bold" />
+
+    <!--    comment here -->
+
+    <EditText
+        android:id="@+id/login_screen_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edit_text_shape"
+        android:drawableStart="@drawable/ic_round_email_24"
+        android:drawablePadding="5dp"
+        android:hint="Email"
+        android:text="amir@gmail.com"
+        android:inputType="textWebEmailAddress"
+        android:padding="@dimen/_10sdp" />
+
+
+    <EditText
+        android:id="@+id/login_screen_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/edit_text_shape"
+        android:drawableStart="@drawable/ic_round_lock_24"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="Password"
+        android:text="123456"
+        android:inputType="textPassword"
+        android:padding="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <Button
+            android:onClick="login"
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="50"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Login" />
+
+        <Button
+            android:onClick="openRegisterScreen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="50"
+            android:backgroundTint="#BF360C"
+            android:text="Register"
+             />
+
+    </LinearLayout>
+
+
+</LinearLayout>
